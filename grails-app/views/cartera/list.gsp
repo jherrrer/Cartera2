@@ -26,7 +26,9 @@
 					
 						<g:sortableColumn property="CC" title="${message(code: 'cartera.CC.label', default: 'CC')}" />
 					
-						<g:sortableColumn property="nombre" title="${message(code: 'cartera.nombre.label', default: 'Nombre')}" />
+						<g:sortableColumn property="entra" title="${message(code: 'cartera.entra.label', default: 'Entra')}" />
+					
+						<g:sortableColumn property="sale" title="${message(code: 'cartera.sale.label', default: 'Sale')}" />
 					
 					</tr>
 				</thead>
@@ -36,7 +38,9 @@
 					
 						<td><g:link action="show" id="${carteraInstance.id}">${fieldValue(bean: carteraInstance, field: "CC")}</g:link></td>
 					
-						<td>${fieldValue(bean: carteraInstance, field: "nombre")}</td>
+						<td>${fieldValue(bean: carteraInstance, field: "entra")}</td>
+					
+						<td>${fieldValue(bean: carteraInstance, field: "sale")}</td>
 					
 					</tr>
 				</g:each>

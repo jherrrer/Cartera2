@@ -32,11 +32,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${carteraInstance?.nombre}">
+				<g:if test="${carteraInstance?.entra}">
 				<li class="fieldcontain">
-					<span id="nombre-label" class="property-label"><g:message code="cartera.nombre.label" default="Nombre" /></span>
+					<span id="entra-label" class="property-label"><g:message code="cartera.entra.label" default="Entra" /></span>
 					
-						<span class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${carteraInstance}" field="nombre"/></span>
+						<span class="property-value" aria-labelledby="entra-label"><g:fieldValue bean="${carteraInstance}" field="entra"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${carteraInstance?.sale}">
+				<li class="fieldcontain">
+					<span id="sale-label" class="property-label"><g:message code="cartera.sale.label" default="Sale" /></span>
+					
+						<span class="property-value" aria-labelledby="sale-label"><g:fieldValue bean="${carteraInstance}" field="sale"/></span>
 					
 				</li>
 				</g:if>
